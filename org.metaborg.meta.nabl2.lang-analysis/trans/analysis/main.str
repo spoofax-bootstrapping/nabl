@@ -2,10 +2,7 @@ module analysis/main
 
 imports
 
-  libstratego-sglr // for amb(_)
-
   analysis/-
-  pp
 
 rules
 
@@ -16,10 +13,10 @@ rules
       
   analyze =
     ?ast;
-    analyzed-ast := <normalize> ast;
+    analyzed-ast := <id> ast;
     error* := <collect-all(analysis-error)> analyzed-ast;
     warning* := <collect-all(analysis-warning)> analyzed-ast;
-    note* := <collect-all(analysis-note)> analyzed-ast;
+    note* := <collect-all(analysis-note);![(None(),"Language component works!")|<id>]> analyzed-ast;
     !(analyzed-ast, error*, warning*, note*)
  
   analysis-error = fail

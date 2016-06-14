@@ -8,7 +8,7 @@ imports
 
 rules
 
-  editor-save = generate-cgen-str
+  editor-save = normalize ; generate-cgen-str
 
   generate-cgen-str:
     (_, _, ast@Module(name,_), path, project-path) -> (filename, result)

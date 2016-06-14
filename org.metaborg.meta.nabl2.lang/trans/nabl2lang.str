@@ -7,7 +7,6 @@ imports
 
   nabl2shared
 
-  analysis/main
   completion
   generation/main
   pp

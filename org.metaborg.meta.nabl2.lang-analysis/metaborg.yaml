@@ -1,0 +1,28 @@
+---
+id: org.metaborg:org.metaborg.meta.nabl2.lang-analysis:${metaborgVersion}
+name: NaBL2Lang_Analysis
+metaborgVersion: 2.0.0-SNAPSHOT
+contributions:
+  name: NaBL2
+  id: org.metaborg:org.metaborg.meta.nabl2:${metaborgVersion}
+dependencies:
+  compile:
+  source:
+language:
+  stratego:
+    format: ctree
+    args:
+    - -la
+    - stratego-lib
+    - -la
+    - stratego-sglr
+    - -la
+    - stratego-gpp
+    - -la
+    - stratego-xtc
+    - -la
+    - stratego-aterm
+    - -la
+    - stratego-sdf
+    - -la
+    - strc

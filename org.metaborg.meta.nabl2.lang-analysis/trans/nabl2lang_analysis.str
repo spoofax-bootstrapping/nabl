@@ -1,0 +1,9 @@
+module nabl2lang_analysis
+
+imports
+
+  libstratego-lib
+  libstratego-aterm
+
+  analysis/main
+ 
