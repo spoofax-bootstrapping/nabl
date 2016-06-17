@@ -1,9 +1,16 @@
 module analysis/desugar
 
 imports
-  
+  // NaBL
   signatures/NameBindingLanguage-sig
-  libstrc
+  signatures/core/-
+  signatures/formulas/-
+  
+  // Stratego
+  signatures/Stratego-Core-Terms-sig
+  signatures/Stratego-Core-Signatures-sig
+  signatures/Stratego-Sugar-Terms-sig
+  signatures/Stratego-Sugar-Strategies-sig
   
 rules
   

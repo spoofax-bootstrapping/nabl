@@ -1,9 +1,21 @@
 module generation/util
 
 imports
+  // NaBL
+  signatures/NameBindingLanguage-sig 
+  signatures/core/-
+  signatures/formulas/-
+  signatures/terms/-
   
-  libstrc
-  signatures/NameBindingLanguage-sig
+  // Stratego
+  signatures/Stratego-Core-Terms-sig
+  signatures/Stratego-Core-Signatures-sig
+  signatures/Stratego-Core-Strategies-sig
+  signatures/Stratego-Core-Modules-sig
+  signatures/Stratego-Sugar-Terms-sig
+  signatures/Stratego-Sugar-Strategies-sig
+  signatures/Stratego-Sugar-Rules-sig
+  signatures/Stratego-Sugar-Modules-sig
   
 rules
 
@@ -57,7 +69,6 @@ rules
     where
       old* := <lookup <+ ![]> (key, map)
     ; new* := <union> (old*, val*) 
-             
   
 overlays
   

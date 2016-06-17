@@ -1,8 +1,18 @@
 module analysis/normalize
 
 imports
-  signatures/NameBindingLanguage-sig
   libstrc
+  
+  // NaBL
+  signatures/NameBindingLanguage-sig
+  signatures/core/-
+  signatures/formulas/-
+  
+  // Stratego
+  signatures/Stratego-Core-Terms-sig
+  signatures/Stratego-Sugar-Terms-sig
+  signatures/Stratego-Sugar-Strategies-sig
+  
   
 strategies
    

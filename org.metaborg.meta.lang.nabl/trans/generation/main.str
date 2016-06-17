@@ -1,15 +1,26 @@
 module generation/main
 
 imports
-
   libstrc
-  signatures/NameBindingLanguage-sig
-  generation/util
-  generation/namespaces
-  generation/properties
-  generation/sections
-  runtime/task/-
-  runtime/nabl/-
+  generation/-
+  runtime/nabl/collect
+  runtime/task/core
+  
+  // NaBL
+  signatures/NameBindingLanguage-sig 
+  signatures/core/-
+  signatures/formulas/-
+  signatures/terms/-
+  
+  // Stratego
+  signatures/Stratego-Core-Terms-sig
+  signatures/Stratego-Core-Signatures-sig
+  signatures/Stratego-Core-Strategies-sig
+  signatures/Stratego-Sugar-Terms-sig
+  signatures/Stratego-Sugar-Strategies-sig
+  signatures/Stratego-Sugar-Rules-sig
+  pp/Stratego-Sugar-pp
+  pp/Stratego-Sugar-parenthesize
 
 rules
 

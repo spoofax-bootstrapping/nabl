@@ -1,11 +1,20 @@
 module generation/import-sites
 
 imports
-	
-  libstrc
-  signatures/NameBindingLanguage-sig
-  
   generation/-
+  
+  // NaBL
+  signatures/NameBindingLanguage-sig
+  signatures/core/-
+  signatures/formulas/-
+  
+  // Stratego
+  signatures/Stratego-Core-Terms-sig
+  signatures/Stratego-Core-Signatures-sig
+  signatures/Stratego-Core-Strategies-sig
+  signatures/Stratego-Sugar-Terms-sig
+  signatures/Stratego-Sugar-Strategies-sig
+  signatures/Stratego-Sugar-Rules-sig
   
 rules
                      
